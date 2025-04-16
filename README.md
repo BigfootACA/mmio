@@ -22,6 +22,9 @@ mmio read 0x44000000 128 | hexdump -C
 
 # Load file into memory at 0x81000000
 mmio write 0x81000000 0x1000 mem.bin
+
+# Pretty print memory at 0x81000000
+mmio show 0x81000000 0x1000
 ```
 
 ## Example Service
